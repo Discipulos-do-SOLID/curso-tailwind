@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn-solid {
+  @apply bg-purple-dark-solid hover:bg-purple-500 text-white p-3 w-full rounded-2xl font-bold text-xl border-b-4 border-purple-solid border-solid
+}
