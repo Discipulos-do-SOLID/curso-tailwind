@@ -8,58 +8,205 @@
 
     <link rel="stylesheet" href="./app.css" />
   </head>
-  <body class="bg-gray-whatsapp">
-    <div class="bg-green-whatsapp py-20 "></div>
-    <div class="container mx-auto -mt-32 flex">
-      <div class="bg-gray-whatsapp w-1/3">
-        <div class="cabecalho bg-gray-cabecalho flex">
-          <div class="cabecalho_profile flex-1 px-4 py-2">
-            <img src="./avatar.jpg" class="rounded-full w-14 h-14">
+  <body class="bg-gray-whatsapp max-h-full">
+    <div class="bg-green-whatsapp py-20"></div>
+    <div
+      class="container mx-auto -mt-32 flex max-h-full shadow-lg"
+      style="max-height: calc(100vh - 64px)"
+    >
+      <div
+        class="
+          bg-gray-whatsapp
+          w-1/3
+          border-r border-gray-400
+          max-h-full
+          overflow-hidden
+        "
+      >
+        <div
+          class="cabecalho bg-gray-cabecalho flex items-center justify-between"
+        >
+          <div class="cabecalho_profile px-4 py-2">
+            <img src="./avatar.jpg" class="rounded-full w-14 h-14" />
           </div>
           <div class="cabecalho_icons flex">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 mr-8 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 mr-8 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+              />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 mr-8 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
             </svg>
-            
           </div>
-
         </div>
         <div class="busca bg-gray-200 px-4 py-2">
-          <div class="bg-white rounded-full py-2 px-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-400 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          <div class="bg-white rounded-full px-4 flex items-center py-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-gray-400 h-6 w-6 mr-6 ml-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
             </svg>
+            <input
+              type="search"
+              placeholder="Search or start new chat"
+              class="w-full text-xl py-2 outline-none"
+            />
           </div>
-          
         </div>
-        <div class="chats bg-white">
 
-          <div class="chat p-4 flex">
-            <div class="foto">
-              <img src="./avatar.jpg" class="rounded-full w-16 h-16">
-            </div>
-            <div class="escrito flex-1 ml-4">
-              <div class="flex">
-                <h3 class="flex-1 font-semibold text-xl">Família 👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧</h3>
-                <p>6:39 AM</p>
+        <!-- Chat -->
+        <div class="chats-wrapper max-h-full overflow-y-scroll">
+          <template>
+            <div class="chats bg-white cursor-pointer hover:bg-gray-100">
+              <div class="chat p-4 flex">
+                <div class="foto">
+                  <img src="./avatar.jpg" class="rounded-full w-16 h-16" />
+                </div>
+                <div class="escrito flex-1 ml-4">
+                  <div class="flex">
+                    <h3 class="flex-1 font-semibold text-xl">Família 👨‍👩‍👧👨‍👩‍👧👨‍👩‍👧</h3>
+                    <p>6:39 AM</p>
+                  </div>
+                  <div class="flex">
+                    <p class="flex-1 text-lg mt-1">Denise: Lindooo</p>
+                    <div>icon1 , 2, e</div>
+                  </div>
+                </div>
               </div>
-              <div class="flex">
-                <p class="flex-1 text-lg mt-1">Denise: Lindooo</p>
-                <div>icon1 , 2, e</div>
-              </div>
             </div>
-          </div>
-          
-
+          </template>
         </div>
       </div>
-      <div class="flex-1 bg-red-300">1asdf</div>
+
+      <!-- 2/3 -->
+      <div class="flex-1 flex flex-col">
+        <!-- Cabeçalho -->
+        <div class="cabecalho bg-gray-cabecalho flex items-center">
+          <div class="cabecalho_profile px-4 py-2">
+            <img src="./avatar.jpg" class="rounded-full w-14 h-14" />
+          </div>
+          <div class="flex-1 text-xl">Nome da Pessoa</div>
+          <div class="cabecalho_icons flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 mr-8 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 mr-8 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- Area dos Textos -->
+        <div class="flex-1 bg-gray-50 area-texto">LALALALALA</div>
+        <!-- Footer -->
+        <div class="busca bg-gray-200 px-4 py-2">
+          <div class="bg-white rounded-full px-4 flex items-center py-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-gray-400 h-6 w-6 mr-6 ml-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <input
+              type="search"
+              placeholder="Search or start new chat"
+              class="w-full text-xl py-2 outline-none"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+    <script>
+      function showContent() {
+        let wrapper = document.getElementsByClassName("chats-wrapper")[0];
+        var temp = document.getElementsByTagName("template")[0];
+
+        for (i = 0; i < 30; i++) {
+          var clon = temp.content.cloneNode(true);
+          wrapper.appendChild(clon);
+        }
+      }
+      showContent();
+    </script>
+
+    <style>
+      .area-texto {
+        background-color: #dfdbe5;
+        background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+    </style>
   </body>
 </html>
